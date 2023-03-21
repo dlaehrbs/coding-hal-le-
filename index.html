@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="movieContainer">
+          <h1>뭐뭐뭐뭐</h1>
+        </div>
+        <ul class="showcase">
+            <li>
+                <div class="availableSeat"></div>
+                <small class="small">Available Seat</small>
+            </li>
+            <li>
+                <div class="selectedSeatIcon"></div>
+                <small class="small">Selected Seat</small>
+            </li>
+            <li>
+                <div class="seat"></div>
+                <small class="small">Occupied Seat</small>
+            </li>
+        </ul>
+
+        <div class="seatContainer">
+            <div class="screen"></div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+            <div class="row">
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+              <span class="seat"></span>
+            </div>
+
+        </div>
+        <div class="occupied">
+          <input type="button" value="예약하기">
+        </div>
+        <p>뭐라뭐라뭐라</p>
+
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () =>{
+
+const seatContainer = document.querySelector('.seatContainer');
+
+
+//좌석 클릭했을때
+
+seatContainer.addEventListener('click', (e) => {
+
+    if(e.target.className === 'seat'){
+        e.target.className = 'selectedSeat';
+    } else if(e.target.className === 'selectedSeat'){
+        e.target.className = 'seat';
+    }
+
+    
+})
+})
+    </script>
+</body>
+
+</html>

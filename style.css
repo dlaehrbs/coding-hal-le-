@@ -1,0 +1,147 @@
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #431460;
+  color: #2dc177;
+  box-sizing: border-box;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+
+}
+
+h1{
+  margin: 80px;
+  font-size: 70px;
+}
+
+.showcase{
+  background-color: #000000;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+  padding: 5px 10px;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.small{
+  color: #777;
+  margin-left: 10px;
+}
+
+.showcase .seat:hover{
+  cursor: default;
+  scale: 1;
+}
+
+.showcase .selectedSeat:hover{
+  cursor: default;
+  scale: 1;
+}
+
+.screen{
+ background-color: #fff;
+ margin: 17px;
+ padding: 10px;
+ width: 325px;
+ height: 50px;
+ transform: rotateX(-45deg);
+ box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+ color: #000;
+
+}
+
+.seat{
+  background-color: #444451;
+  width: 30px;
+  height: 20px;
+  margin: 4px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  cursor: pointer;
+}
+
+.availableSeat{
+  background-color: #444451;
+  width: 30px;
+  height: 20px;
+  margin: 3px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  cursor: default;
+}
+
+.selectedSeatIcon{
+  background-color: #6feaf6;
+  width: 30px;
+  height: 20px;
+  margin: 3px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  cursor: default;
+}
+
+.seat:hover{
+  scale: 1.2;
+}
+
+.selectedSeat:hover{
+  scale: 1.2;
+}
+
+.selectedSeat{
+  background-color: #6feaf6;
+  width: 30px;
+  height: 20px;
+  margin: 3px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  cursor: pointer;
+}
+
+.occupiedSeat{
+  background-color: #fff;
+  width: 30px;
+  height: 20px;
+  margin: 3px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.row{
+  display: flex;
+}
+
+p{
+  margin-top: 30px;
+  padding: 20px;
+  color: #22c3d8;
+}
+input{
+  background-color: #5353b0;
+  color: #d8d8d8;
+  border: #000000;
+  border-width: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 23px;
+  
+}
+input:hover{
+  scale: 1.1;
+}
